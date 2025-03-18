@@ -1,0 +1,326 @@
+/* theme.css - Castles & Crusades Reforged Theme */
+
+/* Chat Log Styling */
+#chat {
+    background-color: rgba(163, 101, 104, 0.2); /* #a36568 at 20% opacity, matching chat log */
+}
+
+#chat-log {
+    background-color: rgba(163, 101, 104, 0.2); /* #a36568 at 20% opacity */
+}
+
+/* Style chat message backgrounds with border and increased padding */
+#chat-log .message {
+    background-color: #f3d78e; /* Light tan/beige background */
+    background-image: url("../assets/grunge-texture.png"); /* Path to the grunge texture */
+    background-blend-mode: overlay; /* Blend the texture with the background color */
+    background-size: cover; /* Ensure the texture covers the message area */
+    background-position: center; /* Center the texture */
+    border: 1px solid #660202; /* Match the input field border color */
+    padding: 1em; /* Increased padding for more space around content */
+}
+
+/* Style chat form to match chat log background with higher specificity */
+#chat #chat-form {
+    background-color: rgba(163, 101, 104, 0.2) !important; /* #a36568 at 20% opacity, matching chat log */
+}
+
+/* Style chat controls to match chat log background */
+#chat-controls {
+    background-color: rgba(163, 101, 104, 0.2); /* #a36568 at 20% opacity, matching chat log */
+}
+
+/* Style roll type select box to match chat messages */
+#chat-controls select {
+    background-color: #f3d78e; /* Light tan/beige background */
+    background-image: url("../assets/grunge-texture.png"); /* Path to the grunge texture */
+    background-blend-mode: overlay; /* Blend the texture with the background color */
+    background-size: cover; /* Ensure the texture covers the area */
+    background-position: center; /* Center the texture */
+}
+
+/* Style chat message input area to match chat messages */
+#chat-form textarea {
+    background-color: #f3d78e; /* Light tan/beige background */
+    background-image: url("../assets/grunge-texture.png"); /* Path to the grunge texture */
+    background-blend-mode: overlay; /* Blend the texture with the background color */
+    background-size: cover; /* Ensure the texture covers the area */
+    background-position: center; /* Center the texture */
+}
+
+/* Recolor chat log icons */
+#chat-controls .fas,
+#chat-controls .fa,
+#chat-controls .icon {
+    color: #8c3a0a; /* Lighter reddish-brown */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+}
+
+#chat-controls .fas:hover,
+#chat-controls .fa:hover,
+#chat-controls .icon:hover {
+    color: #a34b0c; /* Even lighter shade for hover effect */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); /* Slightly stronger shadow on hover */
+}
+
+/* Sidebar Styling */
+#sidebar {
+    background-color: rgba(163, 101, 104, 0.2); /* #a36568 at 20% opacity, matching chat log */
+}
+
+#sidebar .directory-list .directory-item {
+    /* Reverted to default Foundry styling */
+}
+
+#sidebar .item {
+    color: #8c3a0a; /* Lighter reddish-brown */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+}
+
+#sidebar .item:hover {
+    color: #a34b0c; /* Even lighter shade for hover effect */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7); /* Slightly stronger shadow on hover */
+}
+
+/* Window Styling */
+.window-app {
+    background-color: rgba(141, 80, 77, 0.3); /* #8d504d with 30% opacity */
+}
+
+.window-header {
+    background-color: rgba(141, 80, 77, 0.3); /* #8d504d with 30% opacity */
+}
+
+.window-header .window-title,
+.window-header h4.window-title,
+.window-header .button,
+.window-header .fas,
+.window-header .fa,
+.window-header .icon {
+    /* Reverted to default Foundry styling (e.g., white or light grey) */
+}
+
+.tab,
+.tabs .item {
+    /* Reverted to default Foundry styling (e.g., white or light grey) */
+}
+
+/* Notification and Token HUD Styling */
+.notification {
+    /* Reverted to default Foundry styling (e.g., white or light grey) */
+}
+
+.token-hud .control-icon {
+    /* Reverted to default Foundry styling (e.g., white or light grey) */
+}
+
+/* Player/GM Flexrow and Hotbar Page Control Styling */
+.players {
+    background-color: rgba(141, 80, 77, 0.3); /* #8d504d with 30% opacity */
+}
+
+.hotbar-page-control {
+    background-color: rgba(141, 80, 77, 0.3); /* #8d504d with 30% opacity */
+}
+
+/* Character Sheet Styling */
+.tlgcc.sheet.actor h1,
+.tlgcc.sheet.actor h2,
+.tlgcc.sheet.actor h3,
+.tlgcc.sheet.actor .ability .label,
+.tlgcc.sheet.actor .resource-label,
+.tlgcc.sheet.actor .resource .label,
+.tlgcc.sheet.actor .item,
+.tlgcc.sheet.actor .item-name,
+.tlgcc.sheet.actor label,
+.tlgcc.sheet.actor i,
+.tlgcc.sheet.item h1,
+.tlgcc.sheet.item h2,
+.tlgcc.sheet.item h3,
+.tlgcc.sheet.item .ability .label,
+.tlgcc.sheet.item .resource-label,
+.tlgcc.sheet.item .resource .label,
+.tlgcc.sheet.item .item,
+.tlgcc.sheet.item .item-name,
+.tlgcc.sheet.item label,
+.tlgcc.sheet.item i {
+    color: #8c3a0a !important; /* Forcefully apply lighter reddish-brown to override defaults */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important; /* Subtle shadow for readability */
+}
+
+/* Darken ability.ability-label color */
+.tlgcc.sheet.actor .ability .ability-label,
+.tlgcc.sheet.item .ability .ability-label {
+    color: #6b2e07 !important; /* Darkened a couple of steps from #8c3a0a */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important; /* Subtle shadow for readability */
+}
+
+/* Restore hover effect for ability.ability-label with darkened hover color */
+.tlgcc.sheet.actor .ability .ability-label:hover,
+.tlgcc.sheet.item .ability .ability-label:hover {
+    color: #8a3d09 !important; /* Darkened hover color from #a34b0c */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important; /* Slightly stronger shadow on hover */
+}
+
+/* Remove hover effect for i, div.item-name, div.item-detail, label, and resource-label */
+.tlgcc.sheet.actor i:hover,
+.tlgcc.sheet.actor div.item-name:hover,
+.tlgcc.sheet.actor div.item-detail:hover,
+.tlgcc.sheet.actor label:hover,
+.tlgcc.sheet.actor .resource-label:hover,
+.tlgcc.sheet.item i:hover,
+.tlgcc.sheet.item div.item-name:hover,
+.tlgcc.sheet.item div.item-detail:hover,
+.tlgcc.sheet.item label:hover,
+.tlgcc.sheet.item .resource-label:hover {
+    color: #8c3a0a !important; /* Keep the same color on hover */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important; /* Keep the same shadow on hover */
+}
+
+/* Enhance hover state for other character sheet elements (excluding i, div.item-name, div.item-detail, label, resource-label) */
+.tlgcc.sheet.actor h1:hover,
+.tlgcc.sheet.actor h2:hover,
+.tlgcc.sheet.actor h3:hover,
+.tlgcc.sheet.actor .ability .label:hover,
+.tlgcc.sheet.actor .resource .label:hover,
+.tlgcc.sheet.actor .item:hover,
+.tlgcc.sheet.item h1:hover,
+.tlgcc.sheet.item h2:hover,
+.tlgcc.sheet.item h3:hover,
+.tlgcc.sheet.item .ability .label:hover,
+.tlgcc.sheet.item .resource .label:hover,
+.tlgcc.sheet.item .item:hover {
+    color: #a34b0c !important; /* Even lighter shade for hover effect */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important; /* Slightly stronger shadow on hover */
+}
+
+/* Add #660202 border to input fields on all sheets */
+.tlgcc.sheet.actor input,
+.tlgcc.sheet.actor textarea,
+.tlgcc.sheet.actor .input,
+.tlgcc.sheet.actor .editable,
+.tlgcc.sheet.actor .value,
+.tlgcc.sheet.item input,
+.tlgcc.sheet.item textarea,
+.tlgcc.sheet.item .input,
+.tlgcc.sheet.item .editable,
+.tlgcc.sheet.item .value {
+    border: 1px solid #660202 !important; /* Dark reddish-brown border */
+}
+
+/* Recolor icons within these elements in character sheets */
+.tlgcc.sheet.actor .ability .label .fas,
+.tlgcc.sheet.actor .ability .label .fa,
+.tlgcc.sheet.actor .ability .label .icon,
+.tlgcc.sheet.actor .resource-label .fas,
+.tlgcc.sheet.actor .resource-label .fa,
+.tlgcc.sheet.actor .resource-label .icon,
+.tlgcc.sheet.actor .resource .label .fas,
+.tlgcc.sheet.actor .resource .label .fa,
+.tlgcc.sheet.actor .resource .label .icon,
+.tlgcc.sheet.actor .item .fas,
+.tlgcc.sheet.actor .item .fa,
+.tlgcc.sheet.actor .item .icon,
+.tlgcc.sheet.actor .item-name .fas,
+.tlgcc.sheet.actor .item-name .fa,
+.tlgcc.sheet.actor .item-name .icon,
+.tlgcc.sheet.actor label .fas,
+.tlgcc.sheet.actor label .fa,
+.tlgcc.sheet.actor label .icon,
+.tlgcc.sheet.actor i.fas,
+.tlgcc.sheet.actor i.fa,
+.tlgcc.sheet.actor i.icon,
+.tlgcc.sheet.actor div.item-name .fas,
+.tlgcc.sheet.actor div.item-name .fa,
+.tlgcc.sheet.actor div.item-name .icon,
+.tlgcc.sheet.actor div.item-detail .fas,
+.tlgcc.sheet.actor div.item-detail .fa,
+.tlgcc.sheet.actor div.item-detail .icon,
+.tlgcc.sheet.item .ability .label .fas,
+.tlgcc.sheet.item .ability .label .fa,
+.tlgcc.sheet.item .ability .label .icon,
+.tlgcc.sheet.item .resource-label .fas,
+.tlgcc.sheet.item .resource-label .fa,
+.tlgcc.sheet.item .resource-label .icon,
+.tlgcc.sheet.item .resource .label .fas,
+.tlgcc.sheet.item .resource .label .fa,
+.tlgcc.sheet.item .resource .label .icon,
+.tlgcc.sheet.item .item .fas,
+.tlgcc.sheet.item .item .fa,
+.tlgcc.sheet.item .item .icon,
+.tlgcc.sheet.item .item-name .fas,
+.tlgcc.sheet.item .item-name .fa,
+.tlgcc.sheet.item .item-name .icon,
+.tlgcc.sheet.item label .fas,
+.tlgcc.sheet.item label .fa,
+.tlgcc.sheet.item label .icon,
+.tlgcc.sheet.item i.fas,
+.tlgcc.sheet.item i.fa,
+.tlgcc.sheet.item i.icon,
+.tlgcc.sheet.item div.item-name .fas,
+.tlgcc.sheet.item div.item-name .fa,
+.tlgcc.sheet.item div.item-name .icon,
+.tlgcc.sheet.item div.item-detail .fas,
+.tlgcc.sheet.item div.item-detail .fa,
+.tlgcc.sheet.item div.item-detail .icon {
+    color: #8c3a0a !important; /* Forcefully apply lighter reddish-brown to override defaults */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important; /* Subtle shadow for readability */
+}
+
+/* Enhance hover state for these icons (excluding i, div.item-name, div.item-detail) */
+.tlgcc.sheet.actor .ability .label .fas:hover,
+.tlgcc.sheet.actor .ability .label .fa:hover,
+.tlgcc.sheet.actor .ability .label .icon:hover,
+.tlgcc.sheet.actor .resource-label .fas:hover,
+.tlgcc.sheet.actor .resource-label .fa:hover,
+.tlgcc.sheet.actor .resource-label .icon:hover,
+.tlgcc.sheet.actor .resource .label .fas:hover,
+.tlgcc.sheet.actor .resource .label .fa:hover,
+.tlgcc.sheet.actor .resource .label .icon:hover,
+.tlgcc.sheet.actor .item .fas:hover,
+.tlgcc.sheet.actor .item .fa:hover,
+.tlgcc.sheet.actor .item .icon:hover,
+.tlgcc.sheet.actor label .fas:hover,
+.tlgcc.sheet.actor label .fa:hover,
+.tlgcc.sheet.actor label .icon:hover,
+.tlgcc.sheet.item .ability .label .fas:hover,
+.tlgcc.sheet.item .ability .label .fa:hover,
+.tlgcc.sheet.item .ability .label .icon:hover,
+.tlgcc.sheet.item .resource-label .fas:hover,
+.tlgcc.sheet.item .resource-label .fa:hover,
+.tlgcc.sheet.item .resource-label .icon:hover,
+.tlgcc.sheet.item .resource .label .fas:hover,
+.tlgcc.sheet.item .resource .label .fa:hover,
+.tlgcc.sheet.item .resource .label .icon:hover,
+.tlgcc.sheet.item .item .fas:hover,
+.tlgcc.sheet.item .item .fa:hover,
+.tlgcc.sheet.item .item .icon:hover,
+.tlgcc.sheet.item label .fas:hover,
+.tlgcc.sheet.item label .fa:hover,
+.tlgcc.sheet.item label .icon:hover {
+    color: #a34b0c !important; /* Even lighter shade for hover effect */
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important; /* Slightly stronger shadow on hover */
+}
+
+/* Enhance hover state for icons within i, div.item-name, div.item-detail (no highlighting) */
+.tlgcc.sheet.actor i.fas:hover,
+.tlgcc.sheet.actor i.fa:hover,
+.tlgcc.sheet.actor i.icon:hover,
+.tlgcc.sheet.actor div.item-name .fas:hover,
+.tlgcc.sheet.actor div.item-name .fa:hover,
+.tlgcc.sheet.actor div.item-name .icon:hover,
+.tlgcc.sheet.actor div.item-detail .fas:hover,
+.tlgcc.sheet.actor div.item-detail .fa:hover,
+.tlgcc.sheet.actor div.item-detail .icon:hover,
+.tlgcc.sheet.item i.fas:hover,
+.tlgcc.sheet.item i.fa:hover,
+.tlgcc.sheet.item i.icon:hover,
+.tlgcc.sheet.item div.item-name .fas:hover,
+.tlgcc.sheet.item div.item-name .fa:hover,
+.tlgcc.sheet.item div.item-name .icon:hover,
+.tlgcc.sheet.item div.item-detail .fas:hover,
+.tlgcc.sheet.item div.item-detail .fa:hover,
+.tlgcc.sheet.item div.item-detail .icon:hover {
+    color: #8c3a0a !important; /* Keep the same color on hover */
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5) !important; /* Keep the same shadow on hover */
+}
